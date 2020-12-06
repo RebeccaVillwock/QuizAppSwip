@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             x:Class="QuizAppSwip.MainPage">
+
+
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Personality Quiz" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Are You an Introvert or Extrovert" FontSize="16" Padding="30,24,30,0"/>
+
+
+        <SwipeContainer Swipe="OnSwiped"
+                              HorizontalOptions="Center"
+                              VerticalOptions="CenterAndExpand">
+
+            <Label x:Name="QuestionNumber"
+               Text="Question One"/>
+            <Label x:Name="QuestionContent"
+               Text="Do you like being in crowded places"/>
+
+        </SwipeContainer>
+
+    </StackLayout>
+
+
+
+    <!-- <local:SwipeContainer Swipe="OnSwiped" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+    <BoxViewColor="Teal" WidthRequest="300" HeightRequest="300" />
+    </local:SwipeContainer>-->
+</ContentPage>
